@@ -1,3 +1,6 @@
+#[path="bin/fetch.rs"]
+mod fetch;
+
 fn main() {
-    pr
+    fetch::main();
 }
