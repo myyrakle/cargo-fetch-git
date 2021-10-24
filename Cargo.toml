@@ -3,8 +3,17 @@ name = "cargo-fetch-git"
 version = "0.1.0"
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+default = ["fetch"]
+fetch = ["cli"]
+cli = ["atty", "structopt"]
+
+[[bin]]
+name = "cargo-fetch"
+path = "src/bin/fetch.rs"
+required-features = ["fetch"]
 
 [dependencies]
 atty = { version = "0.2.14", optional = true }
 structopt = { version = "0.3.18", optional = true }
+
