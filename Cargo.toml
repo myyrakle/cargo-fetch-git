@@ -2,6 +2,7 @@
 name = "cargo-fetch-git"
 version = "0.1.0"
 edition = "2018"
+default-run = "cargo-fetch"
 
 [features]
 default = ["fetch"]
