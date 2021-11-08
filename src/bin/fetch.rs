@@ -2,6 +2,6 @@
 mod lib;
 
 fn main(){
-    const args = lib::get_args();
-    println!("{}", args);
+    let args = lib::get_args();
+    println!("{:?}", args);
 }
